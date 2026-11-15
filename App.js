@@ -9,6 +9,10 @@ import PHOTOS_URL from './photos';
 import LOCAL from './photos-local';
 import CUSTOM from './custom';
 import { MAROC_RECITERS, SURAHS } from './reciters';
+import { Modal as RModal, TouchableOpacity as RTouch, Text as RText, View as RView, Image as RImage } from 'react-native';
+import { useState as useRState } from 'react';
+import Qibla from './Qibla';
+import Radio from './Radio';
 let FS = null;
 try { FS = require('expo-file-system'); } catch (e) {}
 
@@ -336,6 +340,7 @@ function TabBar({ tab, onTab }) {
 
 // ===== Application =====
 export default function App() {
+  const [panel, setPanel] = useRState(null); // RIAMO_PANEL
   const [data, setData] = useState({ maroc: [], others: [] });
   const [loadingList, setLoadingList] = useState(true);
   const [error, setError] = useState(null);
@@ -844,6 +849,15 @@ export default function App() {
         <Player now={now} status={status} loading={loadingAudio} onToggle={toggle} onNext={() => step(1)} onPrev={() => step(-1)} onSeek={seek} onStop={stopAll} />
         <TabBar tab={selected ? '' : tab} onTab={goTab} />
       </View>
-    </Ctx.Provider>
+    <RImage source={require('./assets/logo.png')} style={{position:'absolute',top:36,left:10,width:48,height:48,borderRadius:10,zIndex:99}} />
+<RView style={{position:'absolute',top:40,right:10,flexDirection:'row',zIndex:99}}>
+<RTouch onPress={() => setPanel('qibla')} style={{backgroundColor:'#d4af37',padding:10,borderRadius:20,marginRight:8}}><RText>🧭 Qibla</RText></RTouch>
+<RTouch onPress={() => setPanel('radio')} style={{backgroundColor:'#d4af37',padding:10,borderRadius:20}}><RText>📻 Radio</RText></RTouch>
+</RView>
+<RModal visible={panel !== null} animationType="slide" onRequestClose={() => setPanel(null)}>
+{panel === 'qibla' && <Qibla onClose={() => setPanel(null)} />}
+{panel === 'radio' && <Radio onClose={() => setPanel(null)} />}
+</RModal>
+</Ctx.Provider>
   );
 }
