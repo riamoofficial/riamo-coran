@@ -1,0 +1,643 @@
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	﻿2026-11-15T20:51:31.8352405Z ##[group]Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8353170Z ^[[36;1mcd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8411264Z shell: /usr/bin/bash -e {0}
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8411617Z env:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8412031Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8412688Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.21-9/x64
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:31.8413196Z ##[endgroup]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:32.1495020Z Downloading https://services.gradle.org/distributions/gradle-9.4.1-bin.zip
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:34.8722832Z .............10%.............20%.............30%.............40%.............50%.............60%..............70%.............80%.............90%.............100%
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1238996Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1249147Z Welcome to Gradle 9.4.1!
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1253297Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1253666Z Here are the highlights of this release:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1254341Z  - Java 26 support
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1278923Z  - Non-class-based JVM tests
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1321845Z  - Enhanced console progress bar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1322630Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1323397Z For more details see https://docs.gradle.org/9.4.1/release-notes.html
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.1324154Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:36.2248181Z To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:51:37.2216675Z Daemon will be stopped at the end of the build 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.4229945Z > Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.4289475Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.4291147Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.4319144Z > Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.5279619Z > Task :gradle-plugin:settings-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.5280871Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.6220031Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:19.6220893Z > Task :gradle-plugin:settings-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:24.3239489Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:processResources NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:24.4217176Z > Task :gradle-plugin:shared:processResources NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:31.4235622Z > Task :gradle-plugin:shared:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:31.5239570Z > Task :gradle-plugin:shared:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:31.5249099Z > Task :gradle-plugin:shared:classes UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:31.5255197Z > Task :gradle-plugin:shared:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:33.7242475Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:33.7281793Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:33.7359483Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:classes UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:33.8219279Z > Task :expo-gradle-plugin:expo-autolinking-plugin-shared:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:40.8213783Z > Task :gradle-plugin:settings-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:40.8214748Z > Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:40.8215586Z > Task :gradle-plugin:settings-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:40.8216632Z > Task :gradle-plugin:settings-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:43.6221341Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:43.6222716Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:43.6223788Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:43.6225271Z > Task :expo-gradle-plugin:expo-autolinking-settings-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5245493Z > Task :expo-gradle-plugin:expo-autolinking-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5280330Z > Task :expo-module-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5299364Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5329458Z > Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5338795Z > Task :expo-module-gradle-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.5368677Z > Task :expo-module-gradle-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.6215278Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:52.6260754Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:55.2240002Z > Task :expo-gradle-plugin:expo-autolinking-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:55.2352586Z > Task :expo-gradle-plugin:expo-autolinking-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:56.2229330Z > Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:56.2269912Z > Task :gradle-plugin:react-native-gradle-plugin:processResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:56.9226099Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:57.0249317Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:57.0279012Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:57.0366861Z > Task :expo-gradle-plugin:expo-max-sdk-override-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:58.8219271Z > Task :expo-gradle-plugin:expo-autolinking-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:58.8220106Z > Task :expo-gradle-plugin:expo-autolinking-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:58.8220798Z > Task :expo-gradle-plugin:expo-autolinking-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:52:58.8221437Z > Task :expo-gradle-plugin:expo-autolinking-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:02.8231344Z > Task :gradle-plugin:react-native-gradle-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:02.8256225Z > Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:02.8281442Z > Task :gradle-plugin:react-native-gradle-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:02.8318455Z > Task :gradle-plugin:react-native-gradle-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:04.6219410Z > Task :expo-module-gradle-plugin:compileKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:04.6220642Z > Task :expo-module-gradle-plugin:compileJava NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:04.6221495Z > Task :expo-module-gradle-plugin:classes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:04.6222119Z > Task :expo-module-gradle-plugin:jar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.1219296Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.1220032Z > Configure project :
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.1221814Z ^[[32m[ExpoRootProject]^[[0m The Kotlin Gradle plugin used by this build is ^[[32m2.2.10^[[0m, but the version catalog declares ^[[33m2.2.0^[[0m. Using the plugin version.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2226021Z ^[[32m[ExpoRootProject]^[[0m Using the following versions:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2249112Z   - buildTools:  ^[[32m37.0.0^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2249615Z   - minSdk:      ^[[32m24^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2249988Z   - compileSdk:  ^[[32m37^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2250320Z   - targetSdk:   ^[[32m36^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2251295Z   - ndk:         ^[[32m27.1.12297006^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2251699Z   - kotlin:      ^[[32m2.2.10^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:11.2252090Z   - ksp:         ^[[32m2.2.10-2.0.2^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0212998Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0213995Z > Configure project :app
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0214883Z WARNING: The option setting 'android.builtInKotlin=false' is deprecated.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0215628Z The current default is 'true'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0216383Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0217231Z WARNING: The option setting 'android.newDsl=false' is deprecated.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0218059Z The current default is 'true'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0218796Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0240160Z  ℹ️  ^[[33mApplying gradle plugin^[[0m '^[[32mexpo-max-sdk-override-plugin^[[0m'
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0296690Z   [expo-max-sdk-override-plugin] This plugin will find all permissions declared with `android:maxSdkVersion`. If there exists a declaration with the `android:maxSdkVersion` annotation and another one without, the plugin will remove the annotation from the final merged manifest. In order to see a log with the changes run a clean build of the app.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0329014Z WARNING: API 'applicationVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0358494Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0359185Z The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0359687Z     android.newDsl=false
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0360044Z to this project's gradle.properties file.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0360621Z For more information, see http://developer.android.com/build/r/new-dsl.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0360947Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0361567Z To determine what is calling applicationVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0362555Z WARNING: API 'testVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0363210Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0363825Z The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0364303Z     android.newDsl=false
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0364688Z to this project's gradle.properties file.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0365270Z For more information, see http://developer.android.com/build/r/new-dsl.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0365623Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0366285Z To determine what is calling testVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0367434Z WARNING: API 'unitTestVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0368308Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0369030Z The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0369559Z     android.newDsl=false
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0369943Z to this project's gradle.properties file.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0370508Z For more information, see http://developer.android.com/build/r/new-dsl.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0370861Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0371523Z To determine what is calling unitTestVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0372619Z Checking the license for package NDK (Side by side) 27.1.12297006 in /usr/local/lib/android/sdk/licenses
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0373384Z License for package NDK (Side by side) 27.1.12297006 accepted.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0373989Z Preparing "Install NDK (Side by side) 27.1.12297006 v.27.1.12297006".
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0374601Z "Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" ready.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0375306Z Installing NDK (Side by side) 27.1.12297006 in /usr/local/lib/android/sdk/ndk/27.1.12297006
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0376486Z "Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" complete.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:35.0377089Z "Install NDK (Side by side) 27.1.12297006 v.27.1.12297006" finished.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0221267Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0222213Z > Configure project :expo
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0226224Z WARNING: API 'libraryVariants' is obsolete and has been replaced with 'AndroidComponentsExtension'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0227281Z It will be removed in version 10.0 of the Android Gradle plugin.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0228362Z The legacy variant API is disabled by default in AGP 9.0, but can be re-enabled by adding 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0229082Z     android.newDsl=false
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0229620Z to this project's gradle.properties file.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0230854Z For more information, see http://developer.android.com/build/r/new-dsl.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0231394Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0232259Z To determine what is calling libraryVariants, use -Pandroid.debug.obsoleteApi=true on the command line to display more information.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0233071Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0233342Z Using expo modules
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0234059Z   - ^[[32mexpo-dom-webview^[[0m (58.0.2)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0234629Z   - ^[[32mexpo-log-box^[[0m (58.0.15)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:37.0235192Z   - ^[[32mexpo-constants^[[0m (58.0.16)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7213748Z   - ^[[32mexpo-modules-core^[[0m (58.1.0)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7214712Z   - ^[[33m[📦]^[[0m ^[[32mexpo-asset^[[0m (58.0.21)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7218612Z   - ^[[33m[📦]^[[0m ^[[32mexpo-audio^[[0m (58.0.12)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7219895Z   - ^[[33m[📦]^[[0m ^[[32mexpo-av^[[0m (16.0.8)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7220826Z   - ^[[33m[📦]^[[0m ^[[32mexpo-file-system^[[0m (58.0.13)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7221548Z   - ^[[33m[📦]^[[0m ^[[32mexpo-font^[[0m (58.0.12)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7222334Z   - ^[[33m[📦]^[[0m ^[[32mexpo-keep-awake^[[0m (58.0.4)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7223034Z   - ^[[33m[📦]^[[0m ^[[32mexpo-location^[[0m (58.0.22)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7223647Z   - ^[[33m[📦]^[[0m ^[[32mexpo-status-bar^[[0m (58.0.5)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:38.7224040Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:49.8218876Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:49.8229106Z > Task :expo-dom-webview:preBuild UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:49.8258661Z > Task :expo-constants:preBuild UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:49.8259167Z > Task :expo-log-box:preBuild UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:49.9219681Z > Task :app:generateAutolinkingNewArchitectureFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0220847Z > Task :app:generateAutolinkingPackageList
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0223631Z > Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0247077Z > Task :app:generateCodegenArtifactsFromSchema SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0247589Z > Task :app:generateReactNativeEntryPoint
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0248110Z > Task :expo:generateInlineModules
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0248609Z > Task :expo:generatePackagesList
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0249015Z > Task :expo:preBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.0249365Z > Task :expo:preReleaseBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.2251502Z > Task :expo:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.2300457Z > Task :expo:mergeReleaseNativeLibs NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.2369171Z > Task :react-native-async-storage_async-storage:generateCodegenSchemaFromJavaScript
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.2473475Z > Task :expo-constants:createReleaseExpoConfig
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3238993Z > Task :expo-constants:preReleaseBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3263867Z > Task :expo:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3288588Z > Task :expo-dom-webview:preReleaseBuild UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3368975Z > Task :expo-constants:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3414975Z > Task :expo-dom-webview:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3458911Z > Task :expo-constants:mergeReleaseNativeLibs NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3488721Z > Task :expo-dom-webview:mergeReleaseNativeLibs NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3516705Z > Task :expo-constants:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3538956Z > Task :expo-log-box:preReleaseBuild UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3598852Z > Task :expo-dom-webview:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3619066Z > Task :expo:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3659574Z > Task :expo-log-box:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3708845Z > Task :expo-log-box:mergeReleaseNativeLibs NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3732959Z > Task :expo:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3759902Z > Task :expo-log-box:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3768676Z > Task :expo-constants:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.3798455Z > Task :expo-constants:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.4253416Z > Task :expo:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.4258498Z > Task :expo-constants:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.4259079Z > Task :expo:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.4260040Z > Task :expo-constants:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6228342Z > Task :react-native-async-storage_async-storage:generateCodegenArtifactsFromSchema
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6229294Z > Task :react-native-async-storage_async-storage:preBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6260837Z > Task :react-native-async-storage_async-storage:preReleaseBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6288985Z > Task :expo-modules-core:decompressPrebuiltNativeLibs
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6349005Z > Task :expo-modules-core:preBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6411173Z > Task :app:preBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6438809Z > Task :app:preReleaseBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6468802Z > Task :react-native-async-storage_async-storage:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.6521207Z > Task :expo-modules-core:preReleaseBuild
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:50.7215373Z > Task :expo-modules-core:unpackExpoModulesV2Cpp
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1227832Z > Task :expo-constants:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1228656Z > Task :expo:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1249081Z > Task :react-native-async-storage_async-storage:mergeReleaseNativeLibs NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1250125Z > Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1252757Z > Task :react-native-async-storage_async-storage:generateReleaseBuildConfig
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1253737Z > Task :react-native-async-storage_async-storage:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1260345Z > Task :react-native-async-storage_async-storage:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.1288884Z > Task :react-native-async-storage_async-storage:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2213045Z > Task :expo:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2214080Z > Task :react-native-async-storage_async-storage:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2215126Z > Task :react-native-async-storage_async-storage:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2215979Z > Task :expo-constants:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2216690Z > Task :expo-constants:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2217536Z > Task :expo-dom-webview:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2218501Z > Task :expo-dom-webview:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2219304Z > Task :react-native-async-storage_async-storage:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2220102Z > Task :expo-dom-webview:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:51.2220842Z > Task :expo-dom-webview:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.6211953Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.6212752Z > Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.6213538Z Checking the license for package CMake 3.22.1 in /usr/local/lib/android/sdk/licenses
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.6214165Z License for package CMake 3.22.1 accepted.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.6214601Z Preparing "Install CMake 3.22.1 v.3.22.1".
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.9279253Z "Install CMake 3.22.1 v.3.22.1" ready.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.9309143Z Installing CMake 3.22.1 in /usr/local/lib/android/sdk/cmake/3.22.1
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.9328581Z "Install CMake 3.22.1 v.3.22.1" complete.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:52.9338571Z "Install CMake 3.22.1 v.3.22.1" finished.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1220543Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1234849Z > Task :expo-dom-webview:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1258675Z > Task :expo-dom-webview:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1286293Z > Task :expo-dom-webview:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1287005Z > Task :expo-log-box:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1287655Z > Task :expo-log-box:generateReleaseBuildConfig
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.1288338Z > Task :expo-log-box:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2212328Z > Task :expo-log-box:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2213649Z > Task :expo-log-box:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2228085Z > Task :expo-log-box:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2229859Z > Task :expo-log-box:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2230414Z > Task :expo-log-box:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2231253Z > Task :expo:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2231853Z > Task :expo:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2232698Z > Task :expo-constants:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2233446Z > Task :expo-dom-webview:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.2234949Z > Task :expo-log-box:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.3213632Z > Task :expo:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.3236926Z > Task :expo-constants:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.3268700Z > Task :expo-dom-webview:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.3305970Z > Task :expo-log-box:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.3328513Z > Task :expo:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.4212460Z > Task :expo:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5229151Z > Task :expo-constants:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5243124Z > Task :expo-constants:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5268560Z > Task :expo-dom-webview:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5298520Z > Task :expo-dom-webview:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5318420Z > Task :expo-log-box:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5328430Z > Task :expo-log-box:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.5358502Z > Task :expo:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9212840Z > Task :expo:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9238847Z > Task :expo-constants:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9260210Z > Task :expo-constants:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9268762Z > Task :expo-dom-webview:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9298621Z > Task :expo-dom-webview:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:54.9328500Z > Task :expo-log-box:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0222729Z > Task :expo-log-box:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0223734Z > Task :expo:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0224389Z > Task :expo:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0262946Z > Task :expo-constants:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0282274Z > Task :expo-constants:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0298578Z > Task :expo-dom-webview:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0331952Z > Task :expo-dom-webview:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0358485Z > Task :expo-log-box:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0379698Z > Task :expo-log-box:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0414947Z > Task :expo:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0426462Z > Task :expo-constants:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.0449842Z > Task :expo-constants:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1249118Z > Task :expo-dom-webview:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1298660Z > Task :expo-dom-webview:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1348543Z > Task :expo-log-box:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1418546Z > Task :expo-log-box:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1459542Z > Task :expo:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1488769Z > Task :expo:stripReleaseDebugSymbols NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1518549Z > Task :expo:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:53:55.1519280Z > Task :expo:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0246378Z > Task :expo-log-box:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0269571Z > Task :expo-log-box:stripReleaseDebugSymbols NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0270448Z > Task :expo-log-box:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0298932Z > Task :expo-log-box:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0304332Z > Task :expo-dom-webview:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0306600Z > Task :expo-dom-webview:stripReleaseDebugSymbols NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0307453Z > Task :expo-dom-webview:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0308403Z > Task :expo-dom-webview:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0309901Z > Task :expo-constants:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0310585Z > Task :expo-constants:stripReleaseDebugSymbols NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.0311573Z > Task :expo-constants:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1212820Z > Task :expo-constants:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1249037Z > Task :expo-constants:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1278590Z > Task :expo-dom-webview:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1308535Z > Task :expo-log-box:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1309423Z > Task :expo:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.1332085Z > Task :expo-constants:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.5229136Z > Task :expo-constants:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.5299190Z > Task :expo-dom-webview:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.7218113Z > Task :expo-dom-webview:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9289350Z Note: Some input files use or override a deprecated API.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9289820Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9346087Z > Task :react-native-async-storage_async-storage:compileReleaseJavaWithJavac
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9392154Z Note: Recompile with -Xlint:deprecation for details.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9406702Z Note: /home/runner/work/riamo-coran/riamo-coran/node_modules/@react-native-async-storage/async-storage/android/src/javaPackage/java/com/reactnativecommunity/asyncstorage/AsyncStoragePackage.java uses unchecked or unsafe operations.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:03.9459062Z Note: Recompile with -Xlint:unchecked for details.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:05.0229531Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:05.0319558Z > Task :expo-modules-core:configureCMakeRelWithDebInfo[arm64-v8a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:05.7219139Z > Task :expo-log-box:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:16.2239482Z > Task :react-native-async-storage_async-storage:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.5219375Z > Task :react-native-async-storage_async-storage:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.8229945Z > Task :react-native-async-storage_async-storage:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.8294094Z > Task :react-native-async-storage_async-storage:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.8429247Z > Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.8519181Z > Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9253412Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9319171Z > Task :react-native-async-storage_async-storage:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9395085Z package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: /home/runner/work/riamo-coran/riamo-coran/node_modules/@react-native-async-storage/async-storage/android/src/main/AndroidManifest.xml.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9535564Z Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9645052Z Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: /home/runner/work/riamo-coran/riamo-coran/node_modules/@react-native-async-storage/async-storage/android/src/main/AndroidManifest.xml.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9678579Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9809379Z > Task :react-native-async-storage_async-storage:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:17.9860594Z > Task :react-native-async-storage_async-storage:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.0269369Z > Task :react-native-async-storage_async-storage:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.0365009Z > Task :react-native-async-storage_async-storage:processReleaseJavaRes NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.0439266Z > Task :react-native-async-storage_async-storage:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.0509262Z > Task :react-native-async-storage_async-storage:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.0589324Z > Task :react-native-async-storage_async-storage:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:18.1249179Z > Task :react-native-async-storage_async-storage:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:19.5239043Z > Task :expo-log-box:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:23.5230161Z > Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:25.2276609Z > Task :app:configureCMakeRelWithDebInfo[armeabi-v7a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.1259442Z > Task :react-native-async-storage_async-storage:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.1298957Z > Task :react-native-async-storage_async-storage:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.2269261Z > Task :react-native-async-storage_async-storage:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.2339245Z > Task :react-native-async-storage_async-storage:stripReleaseDebugSymbols NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.2419288Z > Task :react-native-async-storage_async-storage:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:32.2479113Z > Task :react-native-async-storage_async-storage:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:35.0239137Z > Task :expo-modules-core:buildCMakeRelWithDebInfo[arm64-v8a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:40.5249120Z > Task :app:buildCMakeRelWithDebInfo[armeabi-v7a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:41.8264520Z > Task :react-native-async-storage_async-storage:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:41.8339276Z > Task :react-native-async-storage_async-storage:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:41.9239315Z > Task :react-native-async-storage_async-storage:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:41.9279119Z > Task :react-native-async-storage_async-storage:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:42.0219314Z > Task :react-native-async-storage_async-storage:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:42.0228673Z > Task :react-native-async-storage_async-storage:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:42.6219115Z > Task :app:configureCMakeRelWithDebInfo[x86]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:44.0214000Z > Task :react-native-async-storage_async-storage:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:44.0258931Z > Task :react-native-async-storage_async-storage:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:44.0358783Z > Task :react-native-async-storage_async-storage:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:44.1229365Z > Task :react-native-async-storage_async-storage:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:45.9251861Z > Task :react-native-async-storage_async-storage:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:45.9279254Z > Task :react-native-async-storage_async-storage:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:51.2212204Z > Task :app:buildCMakeRelWithDebInfo[x86]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:51.8251502Z > Task :app:configureCMakeRelWithDebInfo[x86_64]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:54:54.4231254Z > Task :expo-modules-core:configureCMakeRelWithDebInfo[armeabi-v7a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:06.3212711Z > Task :app:buildCMakeRelWithDebInfo[x86_64]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:06.3218629Z > Task :app:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:06.4219091Z > Task :app:buildKotlinToolingMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:08.8241100Z > Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:08.8254376Z > Task :app:generateReleaseBuildConfig
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:08.9219027Z > Task :app:checkReleaseDuplicateClasses
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:10.8218376Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:10.8289021Z > Task :app:createBundleReleaseJsAndAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:10.8328733Z Starting Metro Bundler
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:10.8378228Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:24.4218420Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:24.4229498Z > Task :expo-modules-core:buildCMakeRelWithDebInfo[armeabi-v7a]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8212084Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8213217Z > Task :app:createBundleReleaseJsAndAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8216706Z Android Bundled 14320ms index.js (630 modules)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8217735Z Writing bundle output to: /home/runner/work/riamo-coran/riamo-coran/android/app/build/generated/assets/react/release/index.android.bundle
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8219450Z Writing sourcemap output to: /home/runner/work/riamo-coran/riamo-coran/android/app/build/intermediates/sourcemaps/react/release/index.android.bundle.packager.map
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8220360Z Done writing bundle output
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:28.8220791Z Done writing sourcemap output
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:29.3218409Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:29.3249026Z > Task :expo-modules-core:configureCMakeRelWithDebInfo[x86]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.8219016Z > Task :app:generateReleaseResValues
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.8278725Z > Task :app:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9239069Z > Task :app:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9268899Z > Task :app:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9298847Z > Task :app:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9358890Z > Task :app:createReleaseCompatibleScreenManifests
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9388745Z > Task :app:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9418575Z > Task :app:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9448629Z > Task :app:mergeReleaseStartupProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:31.9449406Z > Task :app:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.0239070Z > Task :app:extractReleaseVersionControlInfo
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.5219050Z > Task :app:collectReleaseDependencies
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.8269132Z > Task :app:sdkReleaseDependencyData
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.8284843Z > Task :app:validateSigningRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.8338528Z > Task :app:writeReleaseAppMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:32.8339037Z > Task :app:writeReleaseSigningConfigVersions
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:52.5213307Z > Task :expo-modules-core:buildCMakeRelWithDebInfo[x86]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:55:52.9212636Z > Task :expo-modules-core:configureCMakeRelWithDebInfo[x86_64]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.5212564Z > Task :expo-modules-core:buildCMakeRelWithDebInfo[x86_64]
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6259549Z > Task :expo-modules-core:mergeReleaseJniLibFolders
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6288748Z > Task :expo-modules-core:checkKotlinGradlePluginConfigurationErrors SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6318462Z > Task :expo-modules-core:generateReleaseBuildConfig
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6342712Z > Task :expo-modules-core:generateReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6343456Z > Task :expo-modules-core:packageReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6368540Z > Task :expo-modules-core:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.6398552Z > Task :expo-modules-core:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:15.7240635Z > Task :expo-modules-core:mergeReleaseNativeLibs
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:16.0219209Z > Task :expo-modules-core:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:16.1229117Z > Task :expo-modules-core:copyReleaseJniLibsProjectOnly
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:16.9220969Z > Task :expo:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:17.6249556Z > Task :app:processReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:17.6310324Z > Task :app:parseReleaseLocalResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:17.6348894Z > Task :app:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:17.6358441Z > Task :app:generateReleaseRFile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:17.7219133Z > Task :app:compileReleaseNavigationResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:19.0228751Z > Task :app:mergeReleaseNativeLibs
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:20.3233750Z > Task :app:stripReleaseDebugSymbols
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:20.8219116Z > Task :app:extractReleaseNativeSymbolTables
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.5223030Z > Task :expo-modules-core:javaPreCompileRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.5268850Z > Task :expo-modules-core:prepareReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.6231682Z > Task :expo-modules-core:writeReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.6249890Z > Task :expo-modules-core:extractDeepLinksRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7230511Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7258866Z > Task :expo-modules-core:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7279165Z /home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/AndroidManifest.xml:8:9-11:45 Warning:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7289069Z 	meta-data#com.facebook.soloader.enabled@android:value was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7318737Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.7348702Z > Task :expo-modules-core:mapReleaseSourceSetPaths
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.8230840Z > Task :expo-modules-core:compileReleaseLibraryResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.8238457Z > Task :app:mergeReleaseArtProfile
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.8258573Z > Task :expo-modules-core:generateReleaseAssets UP-TO-DATE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.8288655Z > Task :expo-modules-core:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.8318610Z > Task :expo-modules-core:extractProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.9229010Z > Task :expo-modules-core:prepareLintJarForPublish
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:21.9268935Z > Task :app:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.1299187Z > Task :expo:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.3258853Z > Task :expo-modules-core:checkReleaseAarMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.5278618Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.5313559Z > Task :app:processReleaseMainManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.5318720Z /home/runner/work/riamo-coran/riamo-coran/android/app/src/main/AndroidManifest.xml Warning:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.5342945Z 	provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:0 to replace other declarations but no other declaration present
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6212713Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6259121Z > Task :app:expoReleaseOverrideMaxSdkConflicts
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6298972Z ^[[33m---------- Expo Max Sdk Override Plugin ----------^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6299704Z ^[[32m>>> No 'android:maxSdkVersion' conflicts found^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6300330Z ^[[33m--------------------------------------------------^[[0m
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6300681Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.6348608Z > Task :app:processReleaseManifest
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.7236278Z > Task :app:processReleaseManifestForPackage
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:22.7261419Z > Task :expo-modules-core:stripReleaseDebugSymbols
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:23.5216237Z > Task :expo-modules-core:copyReleaseJniLibsProjectAndLocalJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:23.6272722Z > Task :expo-modules-core:extractDeepLinksForAarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:23.6299877Z > Task :expo-modules-core:writeReleaseLintModelMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:23.8219062Z > Task :app:mergeReleaseNativeDebugMetadata
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:24.9214038Z > Task :expo-modules-core:mergeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:25.2268990Z > Task :app:mergeReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:25.2295975Z > Task :app:compressReleaseAssets
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:26.1219017Z > Task :expo:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:26.1300670Z > Task :app:processReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:26.2217251Z > Task :app:optimizeReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:26.5225706Z > Task :expo-modules-core:verifyReleaseResources
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:46.0223309Z > Task :expo-modules-core:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1213297Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/CppType.kt:42:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1215630Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:38:10 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1218204Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/JavaCallback.kt:96:45 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1220666Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:49:15 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1223109Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:64:30 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1226022Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:66:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1228751Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:74:39 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1231329Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:75:7 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1234141Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:80:37 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1240179Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:86:47 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1242878Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:23 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1247121Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:92:43 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1249740Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:95:41 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1252336Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/jni/NativeArrayBuffer.kt:105:14 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1255107Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ColorCompat.kt:115:5 This annotation is currently applied to the value parameter only, but in the future it will also be applied to field.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1257146Z - To opt in to applying to both value parameter and field, add '-Xannotation-default-target=param-property' to your compiler arguments.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1258409Z - To keep applying to the value parameter only, use the '@param:' annotation target.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1258861Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1259220Z See https://youtrack.jetbrains.com/issue/KT-73255 for more details.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1260961Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:7:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1263419Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:245:55 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1265924Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/JSTypeConverter.kt:247:19 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1268554Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:6:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1271324Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/ReturnType.kt:45:5 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1273851Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:19:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:51.1276443Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo-modules-core/android/src/main/java/expo/modules/kotlin/types/TypeConverterProvider.kt:254:7 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.7213646Z Note: Some input files use or override a deprecated API.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.7214121Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.7249213Z Note: Recompile with -Xlint:deprecation for details.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.7249913Z > Task :expo-modules-core:compileReleaseJavaWithJavac
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.8249887Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.8302960Z > Task :expo-modules-core:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.8303779Z > Task :expo-modules-core:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.8304415Z > Task :expo-modules-core:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.9219160Z > Task :expo-modules-core:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.9240017Z > Task :expo-modules-core:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:52.9252533Z > Task :expo-modules-core:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:53.2229594Z > Task :expo-modules-core:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:53.2269183Z > Task :expo-modules-core:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:53.3259721Z > Task :expo-modules-core:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:53.3319120Z > Task :expo-modules-core:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:54.1272637Z > Task :expo-modules-core:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:54.2239257Z > Task :expo-modules-core:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:54.5229327Z > Task :expo-modules-core:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:54.6212580Z > Task :expo-modules-core:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.2219436Z > Task :expo-modules-core:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.2251311Z > Task :expo-modules-core:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6216360Z > Task :expo-constants:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6239406Z > Task :expo-constants:compileReleaseJavaWithJavac NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6268836Z > Task :expo-constants:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6298459Z > Task :expo-constants:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6299165Z > Task :expo-constants:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6326370Z > Task :expo-constants:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.6354116Z > Task :expo-constants:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.7239451Z > Task :expo-constants:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.7329216Z > Task :expo-log-box:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.7378995Z > Task :expo-constants:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9239356Z > Task :expo-constants:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9268978Z > Task :expo-constants:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9278706Z > Task :expo-constants:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9308694Z > Task :expo-constants:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9309572Z > Task :expo-constants:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9338786Z > Task :expo-constants:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:55.9368675Z > Task :expo-constants:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.0249073Z > Task :expo-constants:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.0276100Z > Task :expo-constants:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.2215183Z > Task :expo-log-box:compileReleaseJavaWithJavac
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.2245587Z > Task :expo-log-box:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.2270799Z > Task :expo-log-box:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3239329Z > Task :expo-log-box:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3268973Z > Task :expo-log-box:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3298817Z > Task :expo-log-box:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3328762Z > Task :expo-log-box:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3358171Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3369838Z > Task :expo-dom-webview:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3409604Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/@expo/dom-webview/android/src/main/java/expo/modules/webview/DomWebView.kt:200:16 'var allowFileAccessFromFileURLs: Boolean' is deprecated. Deprecated in Java.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3419862Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/@expo/dom-webview/android/src/main/java/expo/modules/webview/DomWebView.kt:254:18 'fun executeOnJavaScriptThread(runnable: Runnable): Unit' is deprecated. Use RuntimeContext.schedule instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3438289Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3448624Z > Task :expo-dom-webview:compileReleaseJavaWithJavac NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3478628Z > Task :expo-dom-webview:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3500125Z > Task :expo-dom-webview:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.3528584Z > Task :expo-dom-webview:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4217378Z > Task :expo-dom-webview:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4288941Z > Task :expo-dom-webview:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4399001Z > Task :expo-dom-webview:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4450629Z > Task :expo-dom-webview:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4528886Z > Task :expo-dom-webview:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4568798Z > Task :expo-dom-webview:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4656690Z > Task :expo-log-box:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.4680867Z > Task :expo-dom-webview:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.5230901Z > Task :expo-log-box:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.5238769Z > Task :expo-log-box:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.5239544Z > Task :expo-dom-webview:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.5240379Z > Task :expo-log-box:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.5241021Z > Task :expo-log-box:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6240891Z > Task :expo-log-box:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6269038Z > Task :expo-dom-webview:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6343335Z > Task :expo-log-box:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6352173Z > Task :expo-log-box:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6378577Z > Task :expo-dom-webview:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6379169Z > Task :expo-dom-webview:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6379676Z > Task :expo-log-box:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6380130Z > Task :expo-log-box:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6380570Z > Task :expo-dom-webview:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:56.6381033Z > Task :expo-dom-webview:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4218900Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4219864Z > Task :expo:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4240184Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/ExpoModulesPackage.kt:34:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4266151Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:22:8 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4295750Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:103:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4329610Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:103:43 'class ReactInstanceManager : Any' is deprecated. Deprecated in Java.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4359471Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/ReactActivityDelegateWrapper.kt:104:21 'val reactInstanceManager: ReactInstanceManager' is deprecated. Deprecated in Java.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4361902Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:15:8 'class NativeArrayBuffer : Destructible' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4391188Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:33:39 'constructor(reactContext: ReactContext): ForwardingCookieHandler' is deprecated. Use the default constructor.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4419631Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/fetch/ExpoFetchModule.kt:111:27 'constructor(byteBuffer: ByteBuffer): NativeArrayBuffer' is deprecated. Use ArrayBuffer instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4449767Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:44:16 This declaration overrides a deprecated member but is not marked as deprecated itself. Add the '@Deprecated' annotation or suppress the diagnostic.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4452252Z w: file:///home/runner/work/riamo-coran/riamo-coran/node_modules/expo/android/src/main/java/expo/modules/fetch/NativeResponse.kt:46:11 'fun deallocate(): Unit' is deprecated. Use sharedObjectDidRelease() instead.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4478147Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4478533Z > Task :expo:compileReleaseJavaWithJavac NO-SOURCE
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4479109Z > Task :expo:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4479637Z > Task :expo:exportReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4480122Z > Task :expo:bundleLibCompileToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4480593Z > Task :expo:bundleLibRuntimeToJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.4481034Z > Task :expo:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:56:59.5219135Z > Task :expo:createFullJarRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.0219511Z > Task :expo:generateReleaseLintModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.2260167Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.2319027Z > Task :app:compileReleaseKotlin
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.2374646Z w: file:///home/runner/work/riamo-coran/riamo-coran/android/app/src/main/java/com/riamoactu/riamocoran/MainActivity.kt:36:20 'constructor(activity: ReactActivity, mainComponentName: String, fabricEnabled: Boolean): DefaultReactActivityDelegate' is deprecated. Creating DefaultReactActivityDelegate with flags is deprecated.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.5229713Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.5258879Z > Task :expo:extractReleaseAnnotations
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.5288614Z > Task :expo:mergeReleaseConsumerProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.5318563Z > Task :expo:lintVitalAnalyzeRelease SKIPPED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.5348525Z > Task :expo:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.6213605Z > Task :expo:generateReleaseLintVitalModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.6218863Z > Task :expo:syncReleaseLibJars
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.6220395Z > Task :expo:bundleReleaseLocalLintAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.6224374Z > Task :expo:bundleReleaseAar
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:01.6236423Z > Task :expo:assembleRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:02.5212334Z > Task :app:compileReleaseJavaWithJavac
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:02.6259251Z > Task :app:mergeReleaseGeneratedProguardFiles
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:02.6279526Z > Task :app:processReleaseJavaRes
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:03.0219186Z > Task :app:expandReleaseArtProfileWildcards
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:03.7229201Z > Task :app:mergeReleaseJavaResource
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:04.2212580Z > Task :app:generateReleaseLintVitalReportModel
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:22.8212537Z > Task :app:lintVitalAnalyzeRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:23.0224895Z > Task :app:lintVitalReportRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:23.0248565Z > Task :app:lintVitalRelease
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1219738Z ERROR: Missing classes detected while running R8. Please add the missing classes or apply additional keep rules that are generated in /home/runner/work/riamo-coran/riamo-coran/android/app/build/outputs/mapping/release/missing_rules.txt.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1220841Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1221024Z > Task :app:minifyReleaseWithR8
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1222108Z ERROR: R8: Missing class expo.modules.core.interfaces.services.KeepAwakeManager (referenced from: void expo.modules.av.video.FullscreenVideoPlayer$KeepScreenOnUpdater.run())
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1224036Z Missing class expo.modules.kotlin.types.AnyTypeProvider (referenced from: expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.av.AVModule.definition() and 1 other context)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.1225653Z Missing class expo.modules.kotlin.types.LazyKType (referenced from: expo.modules.kotlin.modules.ModuleDefinitionData expo.modules.av.AVModule.definition() and 1 other context)
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2223076Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2247144Z > Task :app:minifyReleaseWithR8 FAILED
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2247797Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2248301Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2249106Z [Incubating] Problems report is available at: file:///home/runner/work/riamo-coran/riamo-coran/android/build/reports/problems/problems-report.html
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2249938Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2250539Z Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2251136Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2252015Z You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2252832Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2253825Z For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2254905Z 338 actionable tasks: 338 executed
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2292621Z FAILURE: Build failed with an exception.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2318320Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2338941Z * What went wrong:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2348644Z Execution failed for task ':app:minifyReleaseWithR8'.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2372503Z > A failure occurred while executing com.android.build.gradle.internal.tasks.R8Task$R8Runnable
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2398446Z    > Compilation failed to complete
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2428161Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2448411Z * Try:
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2458506Z > Run with --stacktrace option to get the stack trace.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2488414Z > Run with --info or --debug option to get more log output.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2498591Z > Run with --scan to get full insights from a Build Scan (powered by Develocity).
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2518744Z > Get more help at https://help.gradle.org.
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2530995Z 
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.2531372Z BUILD FAILED in 6m 1s
+build	Run cd android && chmod +x gradlew && ./gradlew assembleRelease --no-daemon	2026-11-15T20:57:33.8266418Z ##[error]Process completed with exit code 1.
