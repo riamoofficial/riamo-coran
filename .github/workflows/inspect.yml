@@ -1,0 +1,28 @@
+name: Inspect APK
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspecter
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG=$(gh release list --repo "${{ github.repository }}" --limit 1 --json tagName -q '.[0].tagName')
+          mkdir dl x
+          gh release download "$TAG" --repo "${{ github.repository }}" --pattern "*.apk" --dir dl
+          cd x && unzip -q ../dl/*.apk 'lib/*'
+          S=_ZNKR8facebook3jsi5Value8asObjectERNS0_7RuntimeE
+          echo "RIAMOLOG: version=$TAG"
+          for d in lib/x86_64 lib/arm64-v8a; do
+            [ -d "$d" ] || continue
+            for f in $d/*.so; do
+              nm -D --undefined-only "$f" 2>/dev/null | grep -q "$S" && echo "RIAMOLOG: BESOIN du symbole: $f"
+              nm -D --defined-only "$f" 2>/dev/null | grep -q "$S" && echo "RIAMOLOG: FOURNIT le symbole: $f"
+            done
+          done
+          echo "RIAMOLOG: libs=$(ls lib/arm64-v8a 2>/dev/null | tr '\n' ' ')"
+          cd .. && echo "RIAMOLOG: modules=$(grep -E '\"(expo|react|react-native|expo-[a-z-]+|@react-native[a-z/-]*)\":' package.json | tr -d ' \n')"
