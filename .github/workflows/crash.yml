@@ -1,0 +1,31 @@
+name: Crash check
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  crash:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Telecharger le dernier APK
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir dl
+          TAG=$(gh release list --repo "${{ github.repository }}" --limit 1 --json tagName -q '.[0].tagName')
+          gh release download "$TAG" --repo "${{ github.repository }}" --pattern "*.apk" --dir dl
+          cp "$(ls dl/*.apk | head -1)" app.apk
+          ls -la app.apk
+      - name: KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 30
+          arch: x86_64
+          target: google_apis
+          disable-animations: true
+          script: bash .github/crash.sh
