@@ -12,6 +12,7 @@ try { MainApp = require('./MainApp').default; } catch (e) { mainErr = e; }
 function load(name) {
   try {
     if (name === 'qibla') return { C: require('./Qibla').default };
+    if (name === 'prayer') return { C: require('./PrayerTimes').default };
     return { C: require('./Radio').default };
   } catch (e) { return { err: e }; }
 }
@@ -53,19 +54,16 @@ function Panel({ which, onClose }) {
 
 export default function App() {
   const [panel, setPanel] = useState(null);
-  const btn = { borderWidth: 1, borderColor: GOLD, paddingVertical: 8, paddingHorizontal: 12, borderRadius: 20 };
+  const circ = { width: 42, height: 42, borderRadius: 21, borderWidth: 1, borderColor: GOLD, alignItems: 'center', justifyContent: 'center', marginLeft: 8 };
   return (
     <View style={{ flex: 1, backgroundColor: BG }}>
       <StatusBar barStyle="light-content" backgroundColor={BG} />
       <View style={{ paddingTop: TOP + 6, paddingBottom: 10, paddingHorizontal: 12, flexDirection: 'row', alignItems: 'center', borderBottomWidth: 1, borderBottomColor: GOLD, backgroundColor: BG }}>
         <Image source={require('./assets/logo.png')} style={{ width: 44, height: 44, borderRadius: 10 }} />
         <Text style={{ color: GOLD, fontSize: 20, fontWeight: 'bold', marginLeft: 10, flex: 1 }}>RIAMO Coran</Text>
-        <TouchableOpacity onPress={() => setPanel('qibla')} style={[btn, { marginRight: 8 }]}>
-          <Text style={{ color: GOLD, fontWeight: 'bold' }}>🧭 Qibla</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => setPanel('radio')} style={btn}>
-          <Text style={{ color: GOLD, fontWeight: 'bold' }}>📻 Radio</Text>
-        </TouchableOpacity>
+        <TouchableOpacity onPress={() => setPanel('prayer')} style={circ}><Text style={{ fontSize: 20 }}>🕌</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => setPanel('qibla')} style={circ}><Text style={{ fontSize: 20 }}>🧭</Text></TouchableOpacity>
+        <TouchableOpacity onPress={() => setPanel('radio')} style={circ}><Text style={{ fontSize: 20 }}>📻</Text></TouchableOpacity>
       </View>
       <View style={{ flex: 1 }}>
         {mainErr ? <ErrBox title="Application" err={mainErr} /> : (
