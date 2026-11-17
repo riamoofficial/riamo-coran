@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { View, Text, TouchableOpacity, FlatList, ScrollView, ActivityIndicator } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList, ScrollView, ActivityIndicator, TextInput } from 'react-native';
 import { createAudioPlayer, setAudioModeAsync } from 'expo-audio';
 
 const GOLD = '#d4af37';
 const BG = '#0b0f14';
 
-const SURES = [
+const LIVE = [
+  { name: 'Radio Mohammed VI du Saint Coran (Assadissa)', url: 'https://cdn.live.easybroadcast.io/abr_corp/73_assadissa_7b7u5n1/playlist_dvr.m3u8', sub: 'SNRT · Maroc' },
   { name: 'Radio Coran – Mix', url: 'https://backup.qurango.net/radio/mix', sub: 'Qurango' },
   { name: 'Radio Coran – Tarateel', url: 'https://backup.qurango.net/radio/tarateel', sub: 'Qurango' },
 ];
@@ -18,8 +19,6 @@ const MIRRORS = [
 ];
 
 const CHIPS = [
-  { id: 'fav', label: '⭐ Sûres' },
-  { id: 'm6', label: '🇲🇦 Mohammed VI', queries: ['countrycode=MA&name=mohammed', 'countrycode=MA&name=mohammed%20vi', 'name=mohammed%20vi&tag=quran'] },
   { id: 'ma', label: '🇲🇦 Maroc', queries: ['countrycode=MA&tag=quran', 'countrycode=MA&name=coran', 'countrycode=MA&name=quran'] },
   { id: 'sa', label: '🇸🇦 Arabie saoudite', queries: ['countrycode=SA&tag=quran', 'countrycode=SA&name=quran'] },
   { id: 'eg', label: '🇪🇬 Égypte', queries: ['countrycode=EG&tag=quran', 'countrycode=EG&name=quran'] },
@@ -28,23 +27,59 @@ const CHIPS = [
   { id: 'world', label: '🌍 Monde', queries: ['tag=quran', 'name=quran', 'name=coran'] },
 ];
 
-async function api(query) {
-  for (const base of MIRRORS) {
-    try {
-      const ctrl = new AbortController();
-      const t = setTimeout(() => ctrl.abort(), 8000);
-      const r = await fetch(base + '/json/stations/search?' + query + '&hidebroken=true&order=clickcount&reverse=true&limit=40', { signal: ctrl.signal });
-      clearTimeout(t);
-      if (r.ok) return await r.json();
-    } catch (e) {}
+async function getJson(url, ms) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), ms || 9000);
+  try {
+    const r = await fetch(url, { signal: ctrl.signal });
+    if (!r.ok) return null;
+    return await r.json();
+  } catch (e) {
+    return null;
+  } finally {
+    clearTimeout(t);
+  }
+}
+
+async function loadMp3Quran() {
+  for (const u of ['https://www.mp3quran.net/api/v3/radios?language=fr', 'https://mp3quran.net/api/v3/radios?language=fr']) {
+    const d = await getJson(u, 12000);
+    if (d && Array.isArray(d.radios)) {
+      return d.radios
+        .filter(r => r && r.url && r.name)
+        .map(r => ({ name: String(r.name).trim(), url: r.url, sub: 'MP3Quran' }));
+    }
   }
   return [];
 }
 
+async function searchCountry(queries) {
+  const seen = {};
+  const out = [];
+  for (const q of queries) {
+    let list = null;
+    for (const base of MIRRORS) {
+      list = await getJson(base + '/json/stations/search?' + q + '&hidebroken=true&order=clickcount&reverse=true&limit=40', 8000);
+      if (list) break;
+    }
+    for (const s of list || []) {
+      const url = s.url_resolved || s.url || '';
+      const name = (s.name || '').trim();
+      if (!name || !url.startsWith('https') || seen[url]) continue;
+      seen[url] = 1;
+      out.push({ name, url, sub: s.country || '' });
+    }
+  }
+  return out.slice(0, 60);
+}
+
 export default function Radio({ onClose }) {
   const playerRef = useRef(null);
-  const [tab, setTab] = useState('fav');
-  const [stations, setStations] = useState(SURES);
+  const [tab, setTab] = useState('live');
+  const [apiList, setApiList] = useState(null);
+  const [paysList, setPaysList] = useState([]);
+  const [chip, setChip] = useState(null);
+  const [q, setQ] = useState('');
   const [loading, setLoading] = useState(false);
   const [current, setCurrent] = useState(null);
   const [msg, setMsg] = useState('');
@@ -55,27 +90,29 @@ export default function Radio({ onClose }) {
     setCurrent(null);
   };
 
-  const choose = async chip => {
-    setTab(chip.id);
+  const pickChip = async c => {
+    setChip(c.id);
     setMsg('');
-    if (!chip.queries) { setStations(SURES); return; }
     setLoading(true);
-    setStations([]);
-    const seen = {};
-    const out = [];
-    for (const q of chip.queries) {
-      const list = await api(q);
-      for (const s of list) {
-        const url = s.url_resolved || s.url || '';
-        const name = (s.name || '').trim();
-        if (!name || !url.startsWith('https') || seen[url]) continue;
-        seen[url] = 1;
-        out.push({ name, url, sub: s.country || '' });
-      }
-    }
-    setStations(out.slice(0, 60));
+    setPaysList([]);
+    const list = await searchCountry(c.queries);
+    setPaysList(list);
     setLoading(false);
-    if (!out.length) setMsg('Aucune radio trouvée ici. Vérifie ta connexion Internet.');
+    if (!list.length) setMsg('Aucune radio trouvée ici. Vérifie ta connexion Internet.');
+  };
+
+  const openTab = async t => {
+    setTab(t);
+    setMsg('');
+    setQ('');
+    if (t === 'api' && apiList === null) {
+      setLoading(true);
+      const list = await loadMp3Quran();
+      setApiList(list);
+      setLoading(false);
+      if (!list.length) setMsg('Bibliothèque MP3Quran indisponible. Vérifie ta connexion Internet.');
+    }
+    if (t === 'pays' && !chip) pickChip(CHIPS[0]);
   };
 
   const play = async s => {
@@ -90,7 +127,7 @@ export default function Radio({ onClose }) {
       setCurrent(s.url);
       setTimeout(() => {
         if (playerRef.current === p && !p.playing) setMsg('Cette radio ne répond pas. Essaies-en une autre.');
-      }, 15000);
+      }, 20000);
     } catch (e) {
       setMsg('Cette radio ne répond pas. Essaies-en une autre.');
     }
@@ -98,22 +135,44 @@ export default function Radio({ onClose }) {
 
   useEffect(() => () => { try { playerRef.current && playerRef.current.remove(); } catch (e) {} }, []);
 
+  const data = tab === 'live'
+    ? LIVE
+    : tab === 'api'
+      ? (apiList || []).filter(s => s.name.toLowerCase().includes(q.trim().toLowerCase()))
+      : paysList;
+
+  const TABS = [['live', 'Live directs'], ['api', 'Bibliothèque'], ['pays', 'Par pays']];
+
   return (
     <View style={{ flex: 1, backgroundColor: BG, padding: 16, paddingTop: 50, paddingBottom: 56 }}>
-      <Text style={{ color: GOLD, fontSize: 22, marginBottom: 14 }}>Radio Coran</Text>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginBottom: 14 }}>
-        {CHIPS.map(c => (
-          <TouchableOpacity key={c.id} onPress={() => choose(c)}
-            style={{ paddingVertical: 9, paddingHorizontal: 14, borderRadius: 20, borderWidth: 1, borderColor: GOLD, marginRight: 8, backgroundColor: tab === c.id ? GOLD : 'transparent' }}>
-            <Text style={{ color: tab === c.id ? '#000' : GOLD, fontWeight: 'bold' }}>{c.label}</Text>
+      <Text style={{ color: GOLD, fontSize: 22, marginBottom: 12 }}>Radio du Coran</Text>
+      <View style={{ flexDirection: 'row', marginBottom: 12 }}>
+        {TABS.map(([id, label]) => (
+          <TouchableOpacity key={id} onPress={() => openTab(id)}
+            style={{ flex: 1, paddingVertical: 10, alignItems: 'center', borderBottomWidth: 2, borderBottomColor: tab === id ? GOLD : '#333' }}>
+            <Text style={{ color: tab === id ? GOLD : '#888', fontWeight: 'bold' }}>{label}</Text>
           </TouchableOpacity>
         ))}
-      </ScrollView>
+      </View>
+      {tab === 'pays' ? (
+        <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{ flexGrow: 0, marginBottom: 12 }}>
+          {CHIPS.map(c => (
+            <TouchableOpacity key={c.id} onPress={() => pickChip(c)}
+              style={{ paddingVertical: 8, paddingHorizontal: 14, borderRadius: 20, borderWidth: 1, borderColor: GOLD, marginRight: 8, backgroundColor: chip === c.id ? GOLD : 'transparent' }}>
+              <Text style={{ color: chip === c.id ? '#000' : GOLD, fontWeight: 'bold' }}>{c.label}</Text>
+            </TouchableOpacity>
+          ))}
+        </ScrollView>
+      ) : null}
+      {tab === 'api' ? (
+        <TextInput value={q} onChangeText={setQ} placeholder="Rechercher une radio…" placeholderTextColor="#777"
+          style={{ color: '#fff', borderWidth: 1, borderColor: '#333', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 12 }} />
+      ) : null}
       {loading ? <ActivityIndicator color={GOLD} style={{ marginVertical: 12 }} /> : null}
       <FlatList
         style={{ flex: 1 }}
-        data={stations}
-        keyExtractor={s => s.url}
+        data={data}
+        keyExtractor={(s, i) => s.url + i}
         renderItem={({ item }) => (
           <TouchableOpacity onPress={() => play(item)}
             style={{ padding: 14, marginBottom: 8, borderRadius: 10, borderWidth: 1, borderColor: GOLD, backgroundColor: current === item.url ? '#1c242e' : 'transparent' }}>
