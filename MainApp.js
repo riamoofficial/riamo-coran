@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, useMemo, useContext, createContext 
 import {
   View, Text, Image, TextInput, FlatList, ScrollView, TouchableOpacity,
   ActivityIndicator, StyleSheet, StatusBar, BackHandler, Alert, Switch,
+  Linking,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createAudioPlayer, setAudioModeAsync } from 'expo-audio';
@@ -13,6 +14,14 @@ let FS = null;
 try { FS = require('expo-file-system'); } catch (e) {}
 
 const PHOTOS = { ...PHOTOS_URL, ...LOCAL };
+
+const MONETAG_LINK = 'https://uplcm.com/4/12294886';
+const ouvrirPub = () => Linking.openURL(MONETAG_LINK).catch(() => {});
+const SoutenirBouton = () => (
+  <TouchableOpacity onPress={ouvrirPub} style={{ padding: 10, alignItems: 'center' }}>
+    <Text style={{ fontSize: 13, opacity: 0.7 }}>Soutenir l'application</Text>
+  </TouchableOpacity>
+);
 
 // ===== COULEURS (modifie ici) =====
 const LIGHT = { bg: '#F3F4EF', card: '#FFFFFF', hero: '#141a22', heroSoft: '#141a22', green: '#1c242e', greenSoft: '#E3F1EA', gold: '#C9A646', goldSoft: '#F6EDD0', goldText: '#7A5F12', text: '#0b0f14', dim: '#6B7A72', line: '#E4E8E2', danger: '#D8573C', white: '#FFFFFF' };
@@ -784,6 +793,7 @@ export default function App() {
           </View>
         ))}
       </View>
+      <SoutenirBouton />
 
       <View style={[S.card, { paddingHorizontal: 16 }]}>
         <Text style={[S.secTitle, { marginBottom: 8, textAlign: rtl ? 'right' : 'left' }]}>{t.about}</Text>
