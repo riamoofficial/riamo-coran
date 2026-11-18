@@ -8,9 +8,10 @@ const GOLD = '#d4af37';
 const BG = '#0b0f14';
 const CARD = '#141a22';
 const KEY = 'riamo.prayer.v1';
+let userPicked = false;
 const DAYS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];
 const MONTHS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-const DEFAULT = { city: 'Paris|France', gps: null, method: 'AUTO', asr: 1, h24: true };
+const DEFAULT = { city: 'Paris|France', gps: null, method: 'AUTO', asr: 1, h24: true, auto: true };
 const LIST = CITIES.map(c => ({ key: c[0] + '|' + c[1], name: c[0], country: c[1], lat: c[2], lng: c[3], tz: c[4], std: c[5], def: c[6] }));
 
 async function readCfg() {
@@ -25,6 +26,18 @@ async function writeCfg(v) {
     const AS = require('@react-native-async-storage/async-storage').default;
     await AS.setItem(KEY, JSON.stringify(v));
   } catch (e) {}
+}
+function nearest(lat, lng) {
+  let best = LIST[0];
+  let bk = 1e9;
+  const rad = x => (x * Math.PI) / 180;
+  for (let i = 0; i < LIST.length; i++) {
+    const c = LIST[i];
+    const a = Math.pow(Math.sin(rad(c.lat - lat) / 2), 2) + Math.cos(rad(lat)) * Math.cos(rad(c.lat)) * Math.pow(Math.sin(rad(c.lng - lng) / 2), 2);
+    const k = 2 * 6371 * Math.asin(Math.min(1, Math.sqrt(a)));
+    if (k < bk) { bk = k; best = c; }
+  }
+  return { c: best, km: bk };
 }
 function norm(s) {
   let t = String(s).toLowerCase();
@@ -53,7 +66,14 @@ export default function PrayerTimes({ onClose }) {
   const [msg, setMsg] = useState('');
   const [busy, setBusy] = useState(false);
 
-  useEffect(() => { readCfg().then(c => { if (c) setCfg({ ...DEFAULT, ...c }); }); }, []);
+  useEffect(() => {
+    userPicked = false;
+    readCfg().then(c => {
+      const n = { ...DEFAULT, ...(c || {}) };
+      setCfg(n);
+      if (n.auto !== false) gpsFix(n, false);
+    });
+  }, []);
   useEffect(() => {
     const id = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(id);
@@ -63,7 +83,9 @@ export default function PrayerTimes({ onClose }) {
 
   const place = useMemo(() => {
     if (cfg.gps) {
-      return { key: 'gps', name: 'Ma position', country: cfg.gps.lat.toFixed(2) + ', ' + cfg.gps.lng.toFixed(2), lat: cfg.gps.lat, lng: cfg.gps.lng, tz: null, std: -new Date().getTimezoneOffset() / 60, def: 'MWL' };
+      const nb = nearest(cfg.gps.lat, cfg.gps.lng);
+      const near = nb.km <= 80;
+      return { key: 'gps', name: 'Ma position', country: near ? 'Près de ' + nb.c.name + ', ' + nb.c.country : cfg.gps.lat.toFixed(2) + ', ' + cfg.gps.lng.toFixed(2), lat: cfg.gps.lat, lng: cfg.gps.lng, tz: null, std: -new Date().getTimezoneOffset() / 60, def: nb.km <= 700 ? nb.c.def : 'MWL' };
     }
     return LIST.find(c => c.key === cfg.city) || LIST[0];
   }, [cfg.city, cfg.gps]);
@@ -100,21 +122,33 @@ export default function PrayerTimes({ onClose }) {
     next = { k: 'tomorrow', label: 'Fajr', at: Date.UTC(y, m - 1, d + 1) - offMin * 60000 + nd.fajr * 3600000, h: nd.fajr };
   }
 
-  const useGps = async () => {
-    setBusy(true);
-    setMsg('');
+  const gpsFix = async (baseCfg, loud) => {
+    if (loud) { setBusy(true); setMsg(''); }
     try {
       const Location = require('expo-location');
-      const r = await Location.requestForegroundPermissionsAsync();
-      if (r.status !== 'granted') { setMsg('Autorise la localisation pour utiliser ta position.'); setBusy(false); return; }
+      let perm = await Location.getForegroundPermissionsAsync();
+      if (perm.status !== 'granted') perm = await Location.requestForegroundPermissionsAsync();
+      if (perm.status !== 'granted') {
+        setMsg('Localisation refusée : les horaires utilisent la ville choisie. Active la localisation dans les réglages du téléphone pour plus de précision.');
+        return;
+      }
       let pos = null;
       try { pos = await Location.getLastKnownPositionAsync(); } catch (e) {}
+      if (pos && !loud && !userPicked) setCfg({ ...baseCfg, gps: { lat: pos.coords.latitude, lng: pos.coords.longitude }, auto: true });
       try { pos = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced }); } catch (e) {}
-      if (!pos) setMsg('Position introuvable. Active le GPS puis réessaie.');
-      else update({ gps: { lat: pos.coords.latitude, lng: pos.coords.longitude } });
-    } catch (e) { setMsg('Localisation : ' + String(e && e.message ? e.message : e)); }
-    setBusy(false);
+      if (!pos) { if (loud || !baseCfg.gps) setMsg('Position introuvable. Active le GPS puis réessaie.'); return; }
+      if (!loud && userPicked) return;
+      const n = { ...baseCfg, gps: { lat: pos.coords.latitude, lng: pos.coords.longitude }, auto: true };
+      setCfg(n);
+      writeCfg(n);
+      setMsg('');
+    } catch (e) {
+      setMsg('Localisation : ' + String(e && e.message ? e.message : e));
+    } finally {
+      if (loud) setBusy(false);
+    }
   };
+  const useGps = () => gpsFix(cfg, true);
 
   const Header = ({ title, back }) => (
     <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 14 }}>
@@ -134,7 +168,7 @@ export default function PrayerTimes({ onClose }) {
           style={{ color: '#fff', borderWidth: 1, borderColor: '#333', borderRadius: 10, paddingHorizontal: 12, paddingVertical: 8, marginBottom: 12 }} />
         <FlatList data={f} keyExtractor={c => c.key}
           renderItem={({ item }) => (
-            <TouchableOpacity onPress={() => { update({ city: item.key, gps: null }); setView('main'); setQ(''); }}
+            <TouchableOpacity onPress={() => { userPicked = true; update({ city: item.key, gps: null, auto: false }); setView('main'); setQ(''); }}
               style={{ padding: 14, marginBottom: 8, borderRadius: 10, borderWidth: 1, borderColor: item.key === cfg.city && !cfg.gps ? GOLD : '#333', backgroundColor: CARD }}>
               <Text style={{ color: '#fff', fontSize: 16 }}>{item.name}</Text>
               <Text style={{ color: '#888', fontSize: 12, marginTop: 2 }}>{item.country}</Text>
